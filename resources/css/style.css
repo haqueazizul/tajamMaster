@@ -335,8 +335,8 @@ img.logo {
 	margin-top: 3rem;
 }
 .card {
-	height:32.5rem;
-	width: 20.2rem; 
+	height:28rem;
+	width: 18rem; 
 
   border: .09rem solid #fff;
 }
@@ -416,4 +416,95 @@ img.logo {
 	width: 100%;
 	padding:.5rem;
 	margin: 1rem 0;
+}
+.contact-section .happy-client{
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+	text-transform: uppercase;
+	color: #000;
+}
+.contact-section .row1{
+	margin: 0 2rem;
+	padding-left: 2rem;
+}
+.contact-section  .brand-logo1,
+.contact-section  .brand-logo2,
+.contact-section  .brand-logo3,
+.contact-section  .brand-logo4,
+.contact-section  .brand-logo5{
+	
+	margin-bottom: 3rem;
+}
+
+.contact-section  .brand-logo6,
+.contact-section  .brand-logo7,
+.contact-section  .brand-logo8,
+.contact-section  .brand-logo9,
+.contact-section  .brand-logo10{
+	margin: 0 8rem;
+	margin-bottom: 3rem;
+}
+
+ /* ###### FOOTER SECTION ####### */
+
+ .footer-section{
+ 	background:#2c254e;
+ 	color: #fff;
+ 	padding: 6rem 0;
+ 	border-top:.1rem solid rgba(255, 255, 255, .3);
+ }
+ .footer-section h2{
+ 	margin-bottom: .6rem;
+ 	font-size: 2rem;
+ 	text-transform: uppercase;
+
+ }
+ .footer-section br{
+ 	margin-bottom:.7rem;
+
+ }
+ .footer-section p{
+ 	font-size: 1.2rem;
+
+ }
+ .footer-section q{
+ 	font-size: 1.2rem;
+ 	margin-bottom:  5rem;
+ }
+ .footer-section .row{
+ 	width: 
+ }
+ .footer-section .logo-tajam{
+ 	width: 7rem;
+ 	margin: 0 10rem;
+
+ }
+.footer-section .foot-er{
+	text-align: center;
+}
+.footer-section ul li{
+	margin-top:3rem;
+	display: inline-block;
+	padding: 0 1.5rem;
+	font-size: 1.2rem;
+}
+.footer-section .copy-right {
+	text-transform: capitalize;
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.2rem;
+	margin: 0 5rem;
+
+	padding-left: 35rem;
+}
+.footer-section ul li a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+
+}
+.footer-section a.btn.btn-hero{
+	border: .6px solid #fff;
+	color: #fff;
 }
