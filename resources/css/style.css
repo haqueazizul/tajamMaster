@@ -116,8 +116,8 @@ a.btn.btn-hero {
 	/* ###### HEADER SECTION ####### */
 
 header{
-	background: #3e2f64;
-
+	background:linear-gradient(rgba(62,47,100,.9),rgba(62,47,100,.9)), url(img/tmb.jpg);
+ 
 	
 	height: 90vh;
 }
@@ -236,8 +236,12 @@ img.logo {
 
 /* ###### STORY REVIEW SECTION ####### */
 .story-review{
-	background: #171338;
+	background: linear-gradient(rgba(23,19,56,.9),rgba(23,19,56,.9)),url(img/storyb.jpg);
+	
 	height: 45rem;
+}
+.fa.fa-play{
+	text-align: center;
 }
 .story-review h4{
 	font-size: 1.5rem;
@@ -302,7 +306,12 @@ img.logo {
 
 /* ###### OUR TEAM SECTION ####### */
 .our-team{
-	background: #302b4f;
+	background: linear-gradient(rgba(48,43,79,0.9),rgba(48,43,79,0.9)), url(img/bg1.jpg);
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
 	
 }
 .our-team .row{
@@ -380,6 +389,10 @@ img.logo {
 }
 
  /* ###### OUR WORKS SECTION ####### */
+ .our-works{
+
+
+ }
 
  .our-works h6{
  	text-align: left;
@@ -394,7 +407,12 @@ img.logo {
 
  /* ###### PEOPLE SAY SECTION ####### */
  .people-say{
- 	background: #333366;
+ 	background:linear-gradient(rgba(62,47,100,.9),rgba(62,47,100,.9)), url(img/tmb.jpg);
+ 	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
  } 
 
  /* ###### CONTACT SECTION ####### */
@@ -452,7 +470,7 @@ img.logo {
  /* ###### FOOTER SECTION ####### */
 
  .footer-section{
- 	background:#2c254e;
+ 	background:linear-gradient(rgba(44,37,78,.9),rgba(44,37,78,.9)), url(img/footer.jpg);
  	color: #fff;
  	padding: 6rem 0;
  	border-top:.1rem solid rgba(255, 255, 255, .3);
