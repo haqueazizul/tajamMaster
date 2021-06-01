@@ -60,6 +60,25 @@ h4{
 	color: #fff;
 
 }
+/* ###### slick slider ####### */
+
+
+#wrapper{
+    width: 1140px;
+    margin: 0 auto;
+
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -145px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
 /* ###### REUSABLE COMPONENTS ####### */
 
 .row{
@@ -90,7 +109,7 @@ section{
 	text-transform:uppercase;
 	padding: 1rem 2rem;
 	display: inline-block;
-	margin-top: 4.5rem;
+	margin-top: 4rem;
 	font-size:1rem;
 	text-align: center;
 	}
@@ -116,7 +135,7 @@ a.btn.btn-hero {
 	/* ###### HEADER SECTION ####### */
 
 header{
-	background:linear-gradient(rgba(62,47,100,.9),rgba(62,47,100,.9)), url(img/tmb.jpg);
+	background:linear-gradient(rgba(62,47,100,.7),rgba(62,47,100,.7)), url(img/tmb.jpg);
  
 	
 	height: 90vh;
@@ -140,8 +159,6 @@ img.logo {
 	width: 114rem;
 
 }
-
-
 /* ###### MAIN NAVIGATION ####### */
 .main-nav{
 	float: left;
@@ -179,7 +196,7 @@ img.logo {
 .story-section{
 	background: #fff;
 	width: 114rem;
-	text-align: justify-all;
+	
 	margin: 0 auto;
 
 }
@@ -201,11 +218,10 @@ img.logo {
 		width: 10rem;
 		float:left;
 }
-	}
+	
 
 
 
-	}
 	.client-photo img{
 		height: 23rem;
 		
@@ -236,17 +252,28 @@ img.logo {
 
 /* ###### STORY REVIEW SECTION ####### */
 .story-review{
-	background: linear-gradient(rgba(23,19,56,.9),rgba(23,19,56,.9)),url(img/storyb.jpg);
+	background: linear-gradient(rgba(23,19,56,.8),rgba(23,19,56,.8)),url(img/storyb.jpg);
 	
 	height: 45rem;
 }
-.fa.fa-play{
-	text-align: center;
+.story-review a{
+	font-size: 2rem;
+    border-radius: 5rem;
+	box-shadow: 0px 0px 2px #fff;
+	padding: 0.3em 0.6em;
+	position: absolute;
+	left: 49.5%;
+	transform: translate(-50%,-50%);
+
+margin: 20rem auto
 }
-.story-review h4{
-	font-size: 1.5rem;
-	text-align: center;
-	margin: 12%;
+p.our-story.edit {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    left: 44.5%;
+    margin-top: 23rem;
 }
 
 /* ###### EXPERTISE SECTION ####### */
@@ -400,10 +427,29 @@ img.logo {
  	font-size: 2rem;
  	color: #000;
  }
+ .col.span_12_of_6.dribble-img {
+    margin: 2rem;
+    text-align: center;
+    padding: 0 9rem;
+}
+.col.span_12_of_6.dribble-img2 {
+    margin: -2.4rem 11rem;
+}
  .our-works .bttn{
  	text-align: center;
  	font-weight: 600;
  }
+ .our-works.col:first-child {
+    margin-left: 0;}
+ .row-1{
+ 	margin-left: 1rem;
+ }
+ .our-works img {
+    width: 150px;
+    height: auto;
+    margin-left: -1rem;
+    margin-top: -1rem;
+}
 
  /* ###### PEOPLE SAY SECTION ####### */
  .people-say{
@@ -413,7 +459,21 @@ img.logo {
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-attachment: fixed;
+	height: 70vh;
+
  } 
+ .fa.fa-quote-left {
+    color: #fff;
+}
+
+ .people-say .row-12{
+
+ 	width: 114rem;
+ }
+ .people-say p{
+ 	margin: 2rem 30rem;
+ 	color: #fff;
+ }
 
  /* ###### CONTACT SECTION ####### */
 
@@ -493,9 +553,7 @@ img.logo {
  	font-size: 1.2rem;
  	margin-bottom:  5rem;
  }
- .footer-section .row{
- 	width: 
- }
+ 
  .footer-section .logo-tajam{
  	width: 7rem;
  	margin: 0 10rem;
@@ -549,17 +607,23 @@ img.logo {
 	letter-spacing: 1rem;
 	transform: rotate(270deg);
 }
-.fa.fa-facebook
-{
-    color: #fff;
-    
+
+.social-icons a.fa.fa-facebook{
+
     display: inline-block;
     border-radius: 5rem;
     box-shadow: 0px 0px 2px #fff;
     padding: 0.6em 0.6em;
-
+    color: #fff;
 }
-
+a.fb {
+    color: #fff;
+    /* margin-left: 1rem; */
+    display: inline-block;
+    border-radius: 5rem;
+    box-shadow: 0px 0px 2px #fff;
+    padding: 0.5em 0.8em;
+}
 .fa.fa-twitter
 {
     color: #fff;
@@ -585,8 +649,8 @@ img.logo {
 {
     color: #fff;
    
-     margin-left: 1rem;
-       display: inline-block;
+    margin-left: 1rem;
+    display: inline-block;
     border-radius: 5rem;
     box-shadow: 0px 0px 2px #fff;
     padding: 0.6em 0.6em;
