@@ -189,7 +189,71 @@ img.logo {
 	color: #00e0d0;
 }
 
+/* ##### STICKY NAVIGATION ####### */
 
+.sticky{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background:rgba(23,19,56,.9) ;
+	padding: 1rem 0;
+	box-shadow: 0,2px,5px rgba(255, 255, 255, .9);
+}
+.sticky .logo{
+	margin-top: 0;
+}
+.sticky .main-nav{
+	margin-top: .2;
+}
+/*MOBILE MENU*/
+.mobile-menu span{
+	color: #fff;
+	float: right;
+	font-size: 4rem;
+	margin-top: 2rem;
+	display: none;
+}
+.mobile-menu span:hover{
+	cursor: pointer;
+}
+.overlay{
+	position: fixed;
+	height: 100%; 
+	width: 0;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .9);
+	z-index: 1;
+	overflow-x: hidden;
+	transition: .5s;
+}
+.overlay-content{
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	
+
+}
+.overlay a{
+	text-decoration: none;
+	display: block;
+	font-size: 3rem;
+	color: #999;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	padding: 1rem 0;
+}
+.overlay a:hover{
+	color: green;
+}
+.closebtn{
+	position: absolute;
+	margin-top: 2rem;
+    margin-left: 10rem;
+
+}
 
 /* ###### STORY SECTION ####### */
 
@@ -251,30 +315,205 @@ img.logo {
 	
 
 /* ###### STORY REVIEW SECTION ####### */
+
 .story-review{
 	background: linear-gradient(rgba(23,19,56,.8),rgba(23,19,56,.8)),url(img/storyb.jpg);
+	height: 60vh;
 	
-	height: 45rem;
+	
 }
-.story-review a{
-	font-size: 2rem;
-    border-radius: 5rem;
-	box-shadow: 0px 0px 2px #fff;
-	padding: 0.3em 0.6em;
-	position: absolute;
-	left: 49.5%;
-	transform: translate(-50%,-50%);
+.devided {
+    margin-top: 5rem;
+}
+#button {
+  /* Text */
+  font-size: 18px;
+  
+  /* Dimensions */
+  width: 40px;
+  height: 40px;
+  
+  /* Positioning */
+  position: relative;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+  /* The code above makes sure the video is
+  both vertically and horizontally centered
+  to the screen */
+  
+  /* Styling */
+  background-color: rgba(0, 0, 0, 0.95);
+  border: 0; /* remove annoying grey border */
+  border-radius: 50%; /* make it a circle */
+  outline: none; /* Ditch the annoyning blue outline on click */
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.25);
+  
+  /* ----- Transformations ----- */
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+  
+  /* ----- Transitions ----- */
+  -webkit-transition: transform .5s ease;
+  -moz-transition: transform .5s ease;
+  -ms-transition: transform .5s ease;
+  -o-transition: transform .5s ease;
+  transition: transform .5s ease;
+}
 
-margin: 20rem auto
+#button:hover {
+  /* ----- Transformations ----- */
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+  
+  /* ----- Transitions ----- */
+  -webkit-transition: transform .5s ease;
+  -moz-transition: transform .5s ease;
+  -ms-transition: transform .5s ease;
+  -o-transition: transform .5s ease;
+  transition: transform .5s ease;
 }
-p.our-story.edit {
-    font-size: 1.5rem;
-    font-weight: 900;
+
+#button > i {
+  /* Text */
+  color: grey;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+  
+  /* Make play sign 3d-ish */
+  
+  /* Positioning */
+  position: relative;
+  margin-top: 4px;
+  margin-left: 6px;
+  
+  /* ----- Transitions ----- */
+  -webkit-transition: color .5s ease;
+  -moz-transition: color .5s ease;
+  -ms-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease;
+}
+
+
+#lightbox {
+  /* ----- Positioning ----- */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  
+  /* The code above makes sure that the
+  lightbox covers the entire page*/
+  
+  /* ----- Visibility ----- */
+  display: none;
+  
+  /* ----- Styling ----- */
+  background-color: rgba(0, 0, 0, 0.95);
+  
+
+}
+
+#video-wrapper {
+  /* ----- Positioning ----- */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+  /* The code above makes sure the video is
+  both vertically and horizontally centered
+  to the screen */
+  
+  /* ----- Styling ----- */
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  
+  /* The code above is used to add a little shadow to the video making blend in better */
+}
+
+#close-btn {
+  /* ----- Text ----- */
+  color: grey;
+  font-size: 25px;
+  
+  /* ----- Positioning ----- */
+  position: fixed;
+  top: 3%;
+  right: 3%;
+  z-index: 2;
+  
+  /* The code above is used to put the button on the upper right corner of the lightbox */
+  
+  /* ----- Transformations ----- */
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+  
+   /* The code above is used to initialize the scale for the button so that it can be used in transitions */
+  
+  /* ----- Transitions ----- */
+  -webkit-transition: transform .5s ease, color .5s ease;
+  -moz-transition: transform .5s ease, color .5s ease;
+  -ms-transition: transform .5s ease, color .5s ease;
+  -o-transition: transform .5s ease, color .5s ease;
+  transition: transform .5s ease, color .5s ease;
+}
+
+#close-btn:hover {
+  /* ----- Text ----- */
+  color: white;
+  
+  /* ----- Styling ----- */
+  cursor: pointer;
+  
+  /* ----- Transformations ----- */
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+  
+    /* ----- Transitions ----- */
+  -webkit-transition: transform .5s ease, color .5s ease;
+  -moz-transition: transform .5s ease, color .5s ease;
+  -ms-transition: transform .5s ease, color .5s ease;
+  -o-transition: transform .5s ease, color .5s ease;
+  transition: transform .5s ease, color .5s ease;
+}
+
+
+
+.our-story-edit {
+    text-align: center;
+    padding: ;
+    margin-left: 4rem;
+    margin-top: 1rem;
     color: #fff;
-    position: absolute;
-    left: 44.5%;
-    margin-top: 23rem;
 }
+
+
 
 /* ###### EXPERTISE SECTION ####### */
 .expertise-section{
@@ -365,6 +604,8 @@ p.our-story.edit {
 /* ###### OUR TEAM CARD SECTION ####### */
 
 
+
+
 .column {
   float: left;
   width: 20%;
@@ -401,6 +642,9 @@ p.our-story.edit {
 .title {
   color: grey;
   font-size: 1rem;
+}
+.our-team img{
+	width: 100%;
 }
 
 .our-team .last-p{
@@ -462,6 +706,9 @@ p.our-story.edit {
 	height: 70vh;
 
  } 
+ .slick-slide img{
+ 	display: initial;
+ }
  .fa.fa-quote-left {
     color: #fff;
 }
@@ -474,6 +721,18 @@ p.our-story.edit {
  	margin: 2rem 30rem;
  	color: #fff;
  }
+ .people-say img {
+    text-align: center;
+    background-size: cover;
+    width: 5%;
+    height: auto;
+    border-radius: 75%;
+
+
+}
+.people-say .img-areas{
+	text-align: center;
+}
 
  /* ###### CONTACT SECTION ####### */
 
@@ -547,6 +806,7 @@ p.our-story.edit {
  }
  .footer-section p{
  	font-size: 1.2rem;
+ 	margin-left: 1rem;
 
  }
  .footer-section q{

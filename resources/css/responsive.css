@@ -1,31 +1,37 @@
 @media only screen and (max-width:1200px)
 {
 	header{
-		height: 65vh
+		height: 85vh
 	}
-	.row{
-		margin:0 1.5rem;
-	}
+	
 	.hero-text-box{
 			width: 90%;
 		}
-
+h1{
+	font-size: 2rem;
 }
-
-
+.our-works img {
+    width: 140px;
+}
+.slick-dots{
+		position: relative;
+		right: 3.6rem;
+	}
 
 
 
 @media only screen and (max-width:1024px)
 {
 	
-	
-		.main-nav{
+	.main-nav{
 			display: none;
+			
 
 		}
 		.mobile-menu span{
 			display: block;
+		    margin-right: 2rem;
+		}
 		}
 		
 		html{
@@ -45,6 +51,39 @@
 			width:100%;
 			margin-left: 0;
 		}
+		.little-description{
+	font-size: 1.5rem;
+	width: 50%;
+	
+    text-align: center;
+	margin-top: 3%;
+	margin-left: 14%;
+	line-height: 2.5rem;
+	color: #d6d4dd;
+	}
+	
+	.slick-dots{
+		position: relative;
+		right: 12rem;
+	}
+	.our-works h6 {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #000;
+    margin-left: 4rem;
+}
+.w-dribble {
+    text-align: right;
+    margin-right: 13rem;
+
+	}
+	.fa.fa-quote-left {
+    color: #fff;
+    position: relative;
+    left: 6rem;}
+	.footer-section .row{
+		margin: 1rem;
 	}
 @media only screen and (max-width:980px)
 {
@@ -55,9 +94,29 @@
 	.span_1_of_4:nth-child(3){
 		margin-left:0;
 	}
-	html{
-		font-size: 62.5%;
+
+		.main-nav{
+			display: none;
+			
+
+		}
+		.slick-dots{
+		position: relative;
+		right: 3rem;
 	}
+
+	.our-works img {
+    width: 120px;
+}
+
+.span_1_of_5 {
+    width: 24.72%;
+}
+	html{
+		font-size: 50.5%;
+	}
+	
+		
 }
 @media only screen and (max-width:768px)
 {
@@ -72,15 +131,60 @@
 		font-size: 3rem;
 
 	}
+	
+		
 	h3{
 		font-size: 2rem;
 	}
+	.client-review p{
+		width: 80%;
+	}
+	.client-pic{
+		margin-left: 0;
+	}
+	.little-description{
+		width: 60%;
+	}
+	.our-team.container {
+    padding: 0 0.6rem;
+}
+.our-team .last-p {
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-top: 26rem;
+}
+	.our-team .column {
+    float: left;
+    width: 0%;
+    margin-bottom: .6rem;
+    padding: 0 10.7rem;
+}
+.our-team img {
+    width: 50%;
+    height: 65%;
+}
+.card {
+    height: 18rem;
+    width: 12rem;
+    border: .09rem solid #fff;
+}
 }
 @media only screen and (max-width:480px)
 {
 		.span_1_of_4{
 		width:100%;
 		}
+		.span_1_of_2 {
+		    width: 100%;
+		    margin-left: 14rem;
+		    margin-top: 5rem;
+		}
+
+
+	.little-description{
+		width: 38%;
+	}
+		
 		h1{
 		font-size: 3rem;
 	}
@@ -91,8 +195,32 @@
 	h3{
 		font-size: 1.5rem;
 	}
+	.client-photo  {
+    text-align: left;
+   
+}
+.client-photo img{
+	height: 15rem;
+}
+
+.client-pic{
+	margin-left: 0;
 
 	
+}
+.footer-section .logo-tajam {
+    width: 5rem;
+    margin: 0 1rem;
+}
+.social-icons {
+    width: 120%;
+}
+.footer-section h2 {
+    margin-bottom: .6rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-left: 1rem;
+}
 }
 
 @media only screen and (max-width:380px)
